@@ -1,6 +1,7 @@
 #!/bin/bash
+#Author: @abhiunix
 
-AWS_REGION=ap-south-1
+AWS_REGION=$1
 
 echo "" | cat > buckets_to_check.txt
 
