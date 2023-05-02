@@ -2,6 +2,7 @@
 #Author: @abhiunix
 
 AWS_REGION=$1
+#AWS_REGION=ap-south-1
 
 echo "" | cat > buckets_to_check.txt
 
@@ -17,6 +18,7 @@ for zone_id in $hosted_zones; do
     fi
 done
 
+rm temp1.txt
 mv temp2.txt buckets_to_check.txt
 
 
