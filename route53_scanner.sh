@@ -21,7 +21,6 @@ done
 rm temp1.txt
 mv temp2.txt buckets_to_check.txt
 
-
 while read bucket_name; do
     if aws s3 ls "s3://$bucket_name" 2>&1 | grep -q 'NoSuchBucket'; then
         echo "Bucket $bucket_name does not exist. This bucket is vulnerable to subdomain takeover."

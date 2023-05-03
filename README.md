@@ -22,7 +22,9 @@ route53_scanner.sh ap-south-1
 ```
 
 ## Results:
-bucket_names_to_takeover.txt file will contain those buckets which does not exists. An attacker can claim those buckets and inting to a bucket which does not exists.
+```
+cat buckets_to_check.txt
+```
+buckets_to_check.txt file will contain those buckets which does not exists. An attacker can claim those buckets and use the website for phishing or spread malware.
 
 List of Regions can be found here: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
-
